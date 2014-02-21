@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385C70C818B74F0000B01E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70C718B74F0000B01E1C /* Foundation.framework */; };
+		385C70CA18B74F0000B01E1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70C918B74F0000B01E1C /* CoreGraphics.framework */; };
+		385C70CC18B74F0000B01E1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70CB18B74F0000B01E1C /* UIKit.framework */; };
+		385C70D218B74F0000B01E1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 385C70D018B74F0000B01E1C /* InfoPlist.strings */; };
+		385C70D418B74F0000B01E1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C70D318B74F0000B01E1C /* main.m */; };
+		385C70D818B74F0000B01E1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C70D718B74F0000B01E1C /* AppDelegate.m */; };
+		385C70DA18B74F0000B01E1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385C70D918B74F0000B01E1C /* Images.xcassets */; };
+		385C70E118B74F0100B01E1C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70E018B74F0100B01E1C /* XCTest.framework */; };
+		385C70E218B74F0100B01E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70C718B74F0000B01E1C /* Foundation.framework */; };
+		385C70E318B74F0100B01E1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C70CB18B74F0000B01E1C /* UIKit.framework */; };
+		385C70EB18B74F0100B01E1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 385C70E918B74F0100B01E1C /* InfoPlist.strings */; };
+		385C70ED18B74F0100B01E1C /* ARMetaioExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C70EC18B74F0100B01E1C /* ARMetaioExTests.m */; };
+		385C70F918B74FDC00B01E1C /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 385C70F818B74FDC00B01E1C /* Assets */; };
+		385C70FE18B7504A00B01E1C /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385C70FB18B7504A00B01E1C /* EAGLView.mm */; };
+		385C70FF18B7504A00B01E1C /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385C70FD18B7504A00B01E1C /* MetaioSDKViewController.mm */; };
+		385C710118B7508000B01E1C /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710018B7508000B01E1C /* metaioSDK.framework */; };
+		385C710318B7512800B01E1C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710218B7512800B01E1C /* AudioToolbox.framework */; };
+		385C710F18B7519900B01E1C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710418B7519900B01E1C /* AVFoundation.framework */; };
+		385C711018B7519900B01E1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710518B7519900B01E1C /* CFNetwork.framework */; };
+		385C711118B7519900B01E1C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710618B7519900B01E1C /* CoreLocation.framework */; };
+		385C711218B7519900B01E1C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710718B7519900B01E1C /* CoreMotion.framework */; };
+		385C711318B7519900B01E1C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710818B7519900B01E1C /* CoreVideo.framework */; };
+		385C711418B7519900B01E1C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710918B7519900B01E1C /* EventKit.framework */; };
+		385C711518B7519900B01E1C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710A18B7519900B01E1C /* libxml2.dylib */; };
+		385C711618B7519900B01E1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710B18B7519900B01E1C /* libz.dylib */; };
+		385C711718B7519900B01E1C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710C18B7519900B01E1C /* OpenGLES.framework */; };
+		385C711818B7519900B01E1C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710D18B7519900B01E1C /* QuartzCore.framework */; };
+		385C711918B7519900B01E1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C710E18B7519900B01E1C /* Security.framework */; };
+		385C711B18B751B900B01E1C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C711A18B751B900B01E1C /* MediaPlayer.framework */; };
+		385C711D18B751D300B01E1C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385C711C18B751D300B01E1C /* CoreMedia.framework */; };
+		385C711F18B7569700B01E1C /* AR-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385C711E18B7569700B01E1C /* AR-iPad.storyboard */; };
+		385C712518B759FF00B01E1C /* MyARExampleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385C712418B759FF00B01E1C /* MyARExampleViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		385C70E418B74F0100B01E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385C70BC18B74F0000B01E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 385C70C318B74F0000B01E1C;
+			remoteInfo = ARMetaioEx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		385C70C418B74F0000B01E1C /* ARMetaioEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARMetaioEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		385C70C718B74F0000B01E1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		385C70C918B74F0000B01E1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		385C70CB18B74F0000B01E1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		385C70CF18B74F0000B01E1C /* ARMetaioEx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARMetaioEx-Info.plist"; sourceTree = "<group>"; };
+		385C70D118B74F0000B01E1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		385C70D318B74F0000B01E1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		385C70D518B74F0000B01E1C /* ARMetaioEx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARMetaioEx-Prefix.pch"; sourceTree = "<group>"; };
+		385C70D618B74F0000B01E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		385C70D718B74F0000B01E1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		385C70D918B74F0000B01E1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		385C70DF18B74F0100B01E1C /* ARMetaioExTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARMetaioExTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		385C70E018B74F0100B01E1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		385C70E818B74F0100B01E1C /* ARMetaioExTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARMetaioExTests-Info.plist"; sourceTree = "<group>"; };
+		385C70EA18B74F0100B01E1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		385C70EC18B74F0100B01E1C /* ARMetaioExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMetaioExTests.m; sourceTree = "<group>"; };
+		385C70F818B74FDC00B01E1C /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ARMetaioEx/Assets; sourceTree = "<group>"; };
+		385C70FA18B7504A00B01E1C /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		385C70FB18B7504A00B01E1C /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		385C70FC18B7504A00B01E1C /* MetaioSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaioSDKViewController.h; sourceTree = "<group>"; };
+		385C70FD18B7504A00B01E1C /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioSDKViewController.mm; sourceTree = "<group>"; };
+		385C710018B7508000B01E1C /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = metaioSDK.framework; path = ../../../../../../../metaiosdk/_iOS/metaioSDK.framework; sourceTree = "<group>"; };
+		385C710218B7512800B01E1C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		385C710418B7519900B01E1C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		385C710518B7519900B01E1C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		385C710618B7519900B01E1C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		385C710718B7519900B01E1C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		385C710818B7519900B01E1C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		385C710918B7519900B01E1C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		385C710A18B7519900B01E1C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		385C710B18B7519900B01E1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		385C710C18B7519900B01E1C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		385C710D18B7519900B01E1C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		385C710E18B7519900B01E1C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		385C711A18B751B900B01E1C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		385C711C18B751D300B01E1C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		385C711E18B7569700B01E1C /* AR-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "AR-iPad.storyboard"; sourceTree = "<group>"; };
+		385C712318B759FF00B01E1C /* MyARExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyARExampleViewController.h; sourceTree = "<group>"; };
+		385C712418B759FF00B01E1C /* MyARExampleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyARExampleViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		385C70C118B74F0000B01E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C711818B7519900B01E1C /* QuartzCore.framework in Frameworks */,
+				385C711218B7519900B01E1C /* CoreMotion.framework in Frameworks */,
+				385C711B18B751B900B01E1C /* MediaPlayer.framework in Frameworks */,
+				385C711418B7519900B01E1C /* EventKit.framework in Frameworks */,
+				385C711D18B751D300B01E1C /* CoreMedia.framework in Frameworks */,
+				385C711118B7519900B01E1C /* CoreLocation.framework in Frameworks */,
+				385C711318B7519900B01E1C /* CoreVideo.framework in Frameworks */,
+				385C711618B7519900B01E1C /* libz.dylib in Frameworks */,
+				385C711018B7519900B01E1C /* CFNetwork.framework in Frameworks */,
+				385C710318B7512800B01E1C /* AudioToolbox.framework in Frameworks */,
+				385C711518B7519900B01E1C /* libxml2.dylib in Frameworks */,
+				385C710F18B7519900B01E1C /* AVFoundation.framework in Frameworks */,
+				385C711918B7519900B01E1C /* Security.framework in Frameworks */,
+				385C711718B7519900B01E1C /* OpenGLES.framework in Frameworks */,
+				385C70CC18B74F0000B01E1C /* UIKit.framework in Frameworks */,
+				385C70C818B74F0000B01E1C /* Foundation.framework in Frameworks */,
+				385C70CA18B74F0000B01E1C /* CoreGraphics.framework in Frameworks */,
+				385C710118B7508000B01E1C /* metaioSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385C70DC18B74F0100B01E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C70E118B74F0100B01E1C /* XCTest.framework in Frameworks */,
+				385C70E318B74F0100B01E1C /* UIKit.framework in Frameworks */,
+				385C70E218B74F0100B01E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385C70BB18B74F0000B01E1C = {
+			isa = PBXGroup;
+			children = (
+				385C70F818B74FDC00B01E1C /* Assets */,
+				385C70CD18B74F0000B01E1C /* ARMetaioEx */,
+				385C70E618B74F0100B01E1C /* ARMetaioExTests */,
+				385C70C618B74F0000B01E1C /* Frameworks */,
+				385C70C518B74F0000B01E1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		385C70C518B74F0000B01E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385C70C418B74F0000B01E1C /* ARMetaioEx.app */,
+				385C70DF18B74F0100B01E1C /* ARMetaioExTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385C70C618B74F0000B01E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385C710D18B7519900B01E1C /* QuartzCore.framework */,
+				385C711C18B751D300B01E1C /* CoreMedia.framework */,
+				385C711A18B751B900B01E1C /* MediaPlayer.framework */,
+				385C710418B7519900B01E1C /* AVFoundation.framework */,
+				385C710518B7519900B01E1C /* CFNetwork.framework */,
+				385C710618B7519900B01E1C /* CoreLocation.framework */,
+				385C710718B7519900B01E1C /* CoreMotion.framework */,
+				385C710818B7519900B01E1C /* CoreVideo.framework */,
+				385C710918B7519900B01E1C /* EventKit.framework */,
+				385C710A18B7519900B01E1C /* libxml2.dylib */,
+				385C710B18B7519900B01E1C /* libz.dylib */,
+				385C710C18B7519900B01E1C /* OpenGLES.framework */,
+				385C710E18B7519900B01E1C /* Security.framework */,
+				385C710218B7512800B01E1C /* AudioToolbox.framework */,
+				385C710018B7508000B01E1C /* metaioSDK.framework */,
+				385C70C718B74F0000B01E1C /* Foundation.framework */,
+				385C70C918B74F0000B01E1C /* CoreGraphics.framework */,
+				385C70CB18B74F0000B01E1C /* UIKit.framework */,
+				385C70E018B74F0100B01E1C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		385C70CD18B74F0000B01E1C /* ARMetaioEx */ = {
+			isa = PBXGroup;
+			children = (
+				385C70F618B74FC600B01E1C /* Storyboards */,
+				385C70F718B74FC600B01E1C /* Views */,
+				385C70D618B74F0000B01E1C /* AppDelegate.h */,
+				385C70D718B74F0000B01E1C /* AppDelegate.m */,
+				385C70D918B74F0000B01E1C /* Images.xcassets */,
+				385C70CE18B74F0000B01E1C /* Supporting Files */,
+			);
+			path = ARMetaioEx;
+			sourceTree = "<group>";
+		};
+		385C70CE18B74F0000B01E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				385C70CF18B74F0000B01E1C /* ARMetaioEx-Info.plist */,
+				385C70D018B74F0000B01E1C /* InfoPlist.strings */,
+				385C70D318B74F0000B01E1C /* main.m */,
+				385C70D518B74F0000B01E1C /* ARMetaioEx-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		385C70E618B74F0100B01E1C /* ARMetaioExTests */ = {
+			isa = PBXGroup;
+			children = (
+				385C70EC18B74F0100B01E1C /* ARMetaioExTests.m */,
+				385C70E718B74F0100B01E1C /* Supporting Files */,
+			);
+			path = ARMetaioExTests;
+			sourceTree = "<group>";
+		};
+		385C70E718B74F0100B01E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				385C70E818B74F0100B01E1C /* ARMetaioExTests-Info.plist */,
+				385C70E918B74F0100B01E1C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		385C70F618B74FC600B01E1C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				385C711E18B7569700B01E1C /* AR-iPad.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		385C70F718B74FC600B01E1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				385C70FA18B7504A00B01E1C /* EAGLView.h */,
+				385C70FB18B7504A00B01E1C /* EAGLView.mm */,
+				385C70FC18B7504A00B01E1C /* MetaioSDKViewController.h */,
+				385C70FD18B7504A00B01E1C /* MetaioSDKViewController.mm */,
+				385C712318B759FF00B01E1C /* MyARExampleViewController.h */,
+				385C712418B759FF00B01E1C /* MyARExampleViewController.mm */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385C70C318B74F0000B01E1C /* ARMetaioEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385C70F018B74F0100B01E1C /* Build configuration list for PBXNativeTarget "ARMetaioEx" */;
+			buildPhases = (
+				385C70C018B74F0000B01E1C /* Sources */,
+				385C70C118B74F0000B01E1C /* Frameworks */,
+				385C70C218B74F0000B01E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARMetaioEx;
+			productName = ARMetaioEx;
+			productReference = 385C70C418B74F0000B01E1C /* ARMetaioEx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		385C70DE18B74F0100B01E1C /* ARMetaioExTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385C70F318B74F0100B01E1C /* Build configuration list for PBXNativeTarget "ARMetaioExTests" */;
+			buildPhases = (
+				385C70DB18B74F0100B01E1C /* Sources */,
+				385C70DC18B74F0100B01E1C /* Frameworks */,
+				385C70DD18B74F0100B01E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				385C70E518B74F0100B01E1C /* PBXTargetDependency */,
+			);
+			name = ARMetaioExTests;
+			productName = ARMetaioExTests;
+			productReference = 385C70DF18B74F0100B01E1C /* ARMetaioExTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385C70BC18B74F0000B01E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ceylanv;
+				TargetAttributes = {
+					385C70C318B74F0000B01E1C = {
+						DevelopmentTeam = FJS6C3X5P5;
+					};
+					385C70DE18B74F0100B01E1C = {
+						TestTargetID = 385C70C318B74F0000B01E1C;
+					};
+				};
+			};
+			buildConfigurationList = 385C70BF18B74F0000B01E1C /* Build configuration list for PBXProject "ARMetaioEx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 385C70BB18B74F0000B01E1C;
+			productRefGroup = 385C70C518B74F0000B01E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385C70C318B74F0000B01E1C /* ARMetaioEx */,
+				385C70DE18B74F0100B01E1C /* ARMetaioExTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385C70C218B74F0000B01E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C70D218B74F0000B01E1C /* InfoPlist.strings in Resources */,
+				385C70F918B74FDC00B01E1C /* Assets in Resources */,
+				385C70DA18B74F0000B01E1C /* Images.xcassets in Resources */,
+				385C711F18B7569700B01E1C /* AR-iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385C70DD18B74F0100B01E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C70EB18B74F0100B01E1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		385C70C018B74F0000B01E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C70FE18B7504A00B01E1C /* EAGLView.mm in Sources */,
+				385C70D818B74F0000B01E1C /* AppDelegate.m in Sources */,
+				385C70FF18B7504A00B01E1C /* MetaioSDKViewController.mm in Sources */,
+				385C70D418B74F0000B01E1C /* main.m in Sources */,
+				385C712518B759FF00B01E1C /* MyARExampleViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385C70DB18B74F0100B01E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385C70ED18B74F0100B01E1C /* ARMetaioExTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		385C70E518B74F0100B01E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 385C70C318B74F0000B01E1C /* ARMetaioEx */;
+			targetProxy = 385C70E418B74F0100B01E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		385C70D018B74F0000B01E1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385C70D118B74F0000B01E1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		385C70E918B74F0100B01E1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385C70EA18B74F0100B01E1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385C70EE18B74F0100B01E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385C70EF18B74F0100B01E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385C70F118B74F0100B01E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/metaiosdk/_iOS,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARMetaioEx/ARMetaioEx-Prefix.pch";
+				INFOPLIST_FILE = "ARMetaioEx/ARMetaioEx-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		385C70F218B74F0100B01E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/metaiosdk/_iOS,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARMetaioEx/ARMetaioEx-Prefix.pch";
+				INFOPLIST_FILE = "ARMetaioEx/ARMetaioEx-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		385C70F418B74F0100B01E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARMetaioEx.app/ARMetaioEx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARMetaioEx/ARMetaioEx-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ARMetaioExTests/ARMetaioExTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		385C70F518B74F0100B01E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARMetaioEx.app/ARMetaioEx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARMetaioEx/ARMetaioEx-Prefix.pch";
+				INFOPLIST_FILE = "ARMetaioExTests/ARMetaioExTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		385C70BF18B74F0000B01E1C /* Build configuration list for PBXProject "ARMetaioEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385C70EE18B74F0100B01E1C /* Debug */,
+				385C70EF18B74F0100B01E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385C70F018B74F0100B01E1C /* Build configuration list for PBXNativeTarget "ARMetaioEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385C70F118B74F0100B01E1C /* Debug */,
+				385C70F218B74F0100B01E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		385C70F318B74F0100B01E1C /* Build configuration list for PBXNativeTarget "ARMetaioExTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385C70F418B74F0100B01E1C /* Debug */,
+				385C70F518B74F0100B01E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385C70BC18B74F0000B01E1C /* Project object */;
+}
