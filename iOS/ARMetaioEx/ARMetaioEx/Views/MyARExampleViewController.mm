@@ -23,6 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    m_gestures = 0xFF; //enables all gestures
+    m_gestureHandler = [[GestureHandlerIOS alloc] initWithSDK:m_metaioSDK withView:glView withGestures:m_gestures];
+    
     if( !m_metaioSDK )
     {
         NSLog(@"SDK instance is 0x0. Please check the license string");
@@ -48,13 +52,31 @@
         if( theLoadedModel )
         {
             // scale it a bit down
-            theLoadedModel->setScale(metaio::Vector3d(0.8,0.8,0.8));
+            theLoadedModel->setTranslation(metaio::Vector3d(-100,-200,0));
+            [m_gestureHandler addObject:theLoadedModel andGroup:1];
         }
         else
         {
             NSLog(@"error, could not load %@", bumblebee);
         }
     }
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // record the initial states of the geometries with the gesture handler
+    [m_gestureHandler touchesBegan:touches withEvent:event withView:glView];
+}
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // handles the drag touch
+    [m_gestureHandler touchesMoved:touches withEvent:event withView:glView];
+}
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [m_gestureHandler touchesEnded:touches withEvent:event withView:glView];
 }
 
 @end

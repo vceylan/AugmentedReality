@@ -573,6 +573,7 @@
 				385C70F218B74F0100B01E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		385C70F318B74F0100B01E1C /* Build configuration list for PBXNativeTarget "ARMetaioExTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +582,7 @@
 				385C70F518B74F0100B01E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
